@@ -1,4 +1,4 @@
-# Cluster-User
+# Cluster-Users
 
 Cluster User Microservice
 
