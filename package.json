@@ -1,0 +1,39 @@
+{
+  "name": "cluster_users",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Bruno Campos",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon -r dotenv/config src/server.js dotenv_config_path=.env.dev",
+    "dev:debug": "nodemon -r dotenv/config --inspect src/server.js dotenv_config_path=.env.dev"
+  },
+  "dependencies": {
+    "@hapi/joi": "^17.1.0",
+    "dotenv": "^8.2.0",
+    "dotenv-safe": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^3.21.2",
+    "mongoose": "^5.8.11",
+    "morgan": "^1.9.1",
+    "nodemon": "^2.0.2"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "mocha": "^7.0.1",
+    "mongoose-data-seed": "^2.1.6",
+    "prettier": "^1.19.1",
+    "supertest": "^4.0.2"
+  },
+  "mdSeed": {
+    "seedersFolder": "./seeds"
+  }
+}

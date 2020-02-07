@@ -1,0 +1,17 @@
+version: '3' # specify docker-compose version
+
+# Define the services/containers to be run
+services:
+
+  cluster_database: # name of the third service
+    image: mongo # specify image to build container from
+    ports:
+      - "27017:27017"  #specify port forewarding
+    volumes:
+      - mongodb:/data/db
+  #redis: # name of the third service
+  #  image: redis # specify image to build container from
+  #  ports:
+  #    - "6379:6379"  #specify port forewarding
+volumes:
+  mongodb:
